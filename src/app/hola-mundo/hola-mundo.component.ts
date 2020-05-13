@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConexionService } from "../conexion.service";
 
 @Component({
   selector: 'app-hola-mundo',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HolaMundoComponent implements OnInit {
 
-  constructor() { }
+  conexion: any;
+  
+  constructor(public conexionService: ConexionService) { }
 
   ngOnInit(): void {
+    this.conexionService.getDatosCsv().subscribe(
+      data => { this.conexion = data}
+    );
   }
 
 }

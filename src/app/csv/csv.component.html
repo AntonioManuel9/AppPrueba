@@ -1,1 +1,6 @@
-CSV
+<h4>Datos del CSV:</h4>
+<ul>
+    <li *ngFor = "let conexiones of conexion;">
+        {{conexiones.date}} {{conexiones.project}} {{conexiones.workItem}} {{conexiones.task}} {{conexiones.hours}}
+    </li>
+</ul>

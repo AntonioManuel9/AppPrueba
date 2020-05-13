@@ -10,6 +10,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { HolaMundoComponent } from './hola-mundo/hola-mundo.component';
 import { CsvComponent } from './csv/csv.component';
 import { GroupCsvComponent } from './group-csv/group-csv.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { GroupCsvComponent } from './group-csv/group-csv.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
