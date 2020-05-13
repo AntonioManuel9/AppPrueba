@@ -16,6 +16,7 @@ export class HolaMundoComponent implements OnInit {
     this.conexionService.getDatosCsv().subscribe(
       data => { this.conexion = data}
     );
+    //this.conexionService.getHolaMundo();
   }
 
 }

@@ -1,4 +1,4 @@
 <h4>Datos agrupados:</h4>
-<ul *ngFor = "let conexiones of conexion;">
-    <li>{{conexiones.task}} {{conexiones.hours}}</li>
+<ul *ngFor = "let conexiones of conexion | keyvalue">
+    <li><b>Tarea:</b>  {{conexiones.key}} <br><b>Horas totales: </b>{{conexiones.value}}</li>
 </ul>
