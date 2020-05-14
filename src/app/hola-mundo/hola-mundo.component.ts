@@ -13,10 +13,10 @@ export class HolaMundoComponent implements OnInit {
   constructor(public conexionService: ConexionService) { }
 
   ngOnInit(): void {
-    this.conexionService.getDatosCsv().subscribe(
-      data => { this.conexion = data}
+    this.conexionService.getHolaMundo().subscribe(
+      data => { this.conexion = data;
+      console.log(data);}
     );
-    //this.conexionService.getHolaMundo();
   }
 
 }

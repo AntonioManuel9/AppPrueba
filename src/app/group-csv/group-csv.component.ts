@@ -14,8 +14,7 @@ export class GroupCsvComponent implements OnInit {
 
   ngOnInit(): void {
     this.conexionService.getDatosAgrupados().subscribe(
-      data => { this.conexion = data
-      console.log(data);}
+      data => { this.conexion = data}
     );
   }
 
