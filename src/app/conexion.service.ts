@@ -23,5 +23,13 @@ export class ConexionService {
   getDatosAgrupados() {
     return this.http.get('http://localhost:8080/agrupamiento');
   }
+
+  getUser() {
+    return this.http.get('http://localhost:8080/user/getUser');
+  }
+
+  getUserList() {
+    return this.http.get('http://localhost:8080/user/getUserList');
+  }
   
 }

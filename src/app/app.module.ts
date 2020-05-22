@@ -11,6 +11,8 @@ import { HolaMundoComponent } from './hola-mundo/hola-mundo.component';
 import { CsvComponent } from './csv/csv.component';
 import { GroupCsvComponent } from './group-csv/group-csv.component';
 import { HttpClientModule } from '@angular/common/http';
+import { UsersComponent } from './users/users.component';
+import { UserListComponent } from './user-list/user-list.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { HttpClientModule } from '@angular/common/http';
     MenuComponent,
     HolaMundoComponent,
     CsvComponent,
-    GroupCsvComponent
+    GroupCsvComponent,
+    UsersComponent,
+    UserListComponent
   ],
   imports: [
     BrowserModule,

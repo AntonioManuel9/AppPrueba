@@ -1,0 +1,14 @@
+<h4>&nbsp;Lista de Usuarios:</h4>
+<ul *ngFor= "let usuarios of users;">
+    <li>
+        <b>Id:</b> {{usuarios.id}} <br>
+        <b>Nombre:</b> {{usuarios.nombre}} <br>
+        <b>Apellidos:</b> {{usuarios.apellidos}} <br>
+        <b>Usuario Everis:</b> {{usuarios.userEveris}} <br>
+        <b>Usuario Caixa:</b> {{usuarios.userCaixa}} <br>
+        <b>Contraseña:</b> {{usuarios.pass}} <br>
+        <b>Fecha de creación:</b> {{usuarios.fecCreacion}} <br>
+        <b>Fecha de modificación:</b> {{usuarios.fecMod}} <br>
+        <b>Fecha último acceso:</b> {{usuarios.fecUltAcceso}}
+    </li>   
+</ul>
