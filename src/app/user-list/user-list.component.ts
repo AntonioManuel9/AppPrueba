@@ -13,7 +13,7 @@ export class UserListComponent implements OnInit {
   constructor(public conexionService: ConexionService) { }
 
   ngOnInit(): void {
-    this.conexionService.getUser().subscribe(
+    this.conexionService.getUserList().subscribe(
       data => { this.users = data
       console.log(data)}
     );
